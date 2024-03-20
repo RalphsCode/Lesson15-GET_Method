@@ -1,0 +1,54 @@
+<!-- 
+    Testing the GET & POST methods.
+        GET passes the form data via URL encoding.
+            - The key here is to include the name attribute in the inputs
+            so they have a name/value combination to include in the encoding.
+            - No name attribute = no url encoding.
+        POST requests send data in the HTTP request body, not the URL. 
+            - To test post use PostBIN to create a receiving resource.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing the GET method</title>
+</head>
+<body>
+    <h1>Tesing GET and POST form methods.</h1>
+    <p>Note: Prior to doing a POST; set up a receiving bin at PostBin.</br>Use Chrome Developer Tools > Network to view the headers.</p>
+    <div> 
+        <table>
+            <form action="index.html" method="get">
+            <tr>
+                <td><label for="some_text">Enter some text:</label></td>
+                <td><input type="text" placeholder="Some Text" name="some_text"></td>
+            </tr>
+            <tr>
+                <td><label for="rating">Text Rating:</label></td>
+                <td><input type="range" min="1" max="10" value="5" name="rating"></td>
+            </tr>
+            <tr>
+                <td><label for="do_publish">Publish:</label></td>
+                <td><input type="radio" checked="clecked" name="radioGroup" id="do_publish"></td>
+            </tr>
+            <tr>
+                <td><label for="not_publish">Do Not Publish:</label></td>
+                <td><input type="radio" name="radioGroup" id="do_not_publish"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Today's Date:</label></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="reset">Clear Form</button></td>
+            </tr>
+        </form>
+        </table>
+        </div>
+        
+        <!--  <script src="script_GET.js"></script> -->
+</body>
+</html>
