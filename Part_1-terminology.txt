@@ -1,0 +1,37 @@
+- What is HTTP?
+HTTP or HyperText Transfer Protocol is a format used on the Internet to handle websites and the like. It is a set of standards for sharing information on the WWW.
+
+- What is a URL? 
+A URL or Uniform Resource Locator is a statement that identifies the location a resource on the Internet. The resource could be a website, a file, or a folder.
+
+- What is DNS?
+DNS or Domain Name System is a place where a URL is mapped to its Internet Protocol address. It allows common english names to be used to access resources as opposed to knowing the exact IP address of that resource.
+
+- What is a query string?
+A query string is the part of a domain name that usually comes after a question mark (?) and is used to transfer supplemental information to the receiving web resource.
+
+- What are two HTTP verbs and how are they different?
+GET and POST are two HTTP verbs. They are different in that GET is used to request infromation from the resource, but the request is not requesting any action or side effects be done on the server, it is only requesting the retrieval of the data. POST is also used to request data from a server, but the difference is that POST is asking the server to perform an action on the data before returning it. POST will usually pass additional information to the server for the werver to act upon before the server returns the resulting data.
+
+- What is an HTTP request?
+An HTTP request is a request made by a user to a server. The request could be for a webpage, or a file for example.
+
+- What is an HTTP response?
+An HTTP response is the reply from the server to the client, based on the clients request. The response could be that all is good, or it could be an error of some kind, or some other response.
+
+- What is an HTTP header? Give a couple examples of request and response headers you have seen.
+AN HTTP header is a collection of data related to a request or response to/from a server. It could include the protocol that is requested, it could include the language to use for the response, etc.
+Here are some HTTP request headers:
+	User-Agent: Mozilla/5.0 (browser info)
+	Accept-Language: en-US,en;q=0.5 (preferred languages)
+Here are some HTTP request headers:
+	Content-Type: text/html; charset=UTF-8 (MIME type of the response content)
+	Server: Apache/2.4.18 (name of the server software)
+	
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+First the IP address has to be deceiphered, either by the ISP, the router, or DNS.
+The HTTP request is sent to the hosting server identified by the IP address.
+The hosting server accepts the request and maps to the requested html file in the requested folder on the server.
+The hosting server sends back the code from the requested file, back to the client.
+The client receives the data and decodes the HTML to present the webpage to the client.
+
